@@ -1,0 +1,158 @@
+/*
+     Project    : Grocery List Project using HTML, CSS, Javascript, jQuery
+     Created by : K. Deepak Kumar
+     Contact at : deepakplay14@gmail.com
+*/
+
+*{
+    border:0px;
+    padding:0px;
+    box-sizing:border-box;
+    margin:0px;
+    outline:none;
+    color:#444;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-size: 1rem;
+	font-weight:400;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(240, 245, 250);
+}
+
+.container{
+    width:90%;
+    max-width: 550px;
+    padding:30px 40px;
+    margin: 70px auto 0;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+}
+
+.header{
+    text-align: center;    
+}
+
+.header h1{
+	font-weight:400;
+}
+
+.inputItems{
+    display: flex;
+    margin: 30px 0 20px;
+    justify-content: center;
+}
+.inputItems input[type="text"]{
+    flex:1;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #D8D8D8;
+    border-radius: 6px 0 0 6px ;
+    min-width: 50px;
+    max-width: 320px;
+    background-color: rgb(243, 248, 250);
+}
+
+.inputItems button.submit{
+    min-width: 80px;
+    background-color:rgb(26, 115, 232);
+    font-size: .9rem;
+    color:#FFF;
+    border-radius: 0 6px 6px 0;
+}
+.inputItems button.submit:hover{
+    transition: all .2s ease;
+    background-color:rgb(35, 130, 255);
+}
+
+.errorInput{
+	border:1px solid rgb(255, 123, 123) !important;
+    box-shadow: 0 0px 8px rgb(255, 139, 139) !important;
+}
+
+.grocery_list{
+    padding:0 20px 20px;
+}
+
+.grocery_item{
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 380px;
+    background-color:  rgb(226, 237, 248);
+    position: relative;
+}
+.grocery_item .item_name{
+    color:#444;
+}
+.item_op{
+    margin-left: auto;
+    position: absolute;
+    right: -1px;
+    top:50%;
+    transform: translateY(-51%);
+    display: flex;
+}
+
+.item_op .edit,.item_op .delete {
+    background-color: #BBB;
+    padding: 18px 13px;
+}
+
+.item_op .edit{
+    background-color: rgb(220, 220, 255);
+    border-radius: 10px 0 0 10px;
+}
+.item_op .edit:hover{
+    transition: all .2s ease;
+    background-color: rgb(210, 210, 255);
+}
+
+.item_op .edit i{
+    color:rgb(80, 80, 220);
+}
+
+.item_op .delete{
+    background-color: rgb(255, 225, 225);
+    border-radius: 0 10px 10px 0;
+}
+
+.item_op .delete:hover{
+    transition: all .2s ease;
+    background-color: rgb(255, 210, 210);
+}
+
+.item_op .delete i{
+    color:rgba(220, 80, 80);
+}
+
+.clear{
+    text-align: center;
+}
+
+.clearItem{
+    font-size: 1rem;
+    padding:10px;
+    border-radius: 8px;
+    background-color: rgb(255, 240, 240);
+    color:rgb(255, 77, 77);
+}
+
+.clearItem:hover{
+    transition: all .2s ease;
+    background-color: rgb(255, 225, 225);
+}
+
+@media (max-width:550px){
+    .grocery_list{
+        padding:0 0 20px; 
+    }
+}

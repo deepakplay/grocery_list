@@ -1,0 +1,46 @@
+<!--
+     Project    : Grocery List Project using HTML, CSS, Javascript, jQuery
+     Created by : K. Deepak Kumar
+     Contact at : deepakplay14@gmail.com
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Grocery list</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"></noscript>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="assets/style.css">
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-H6PDZ8R2J1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-H6PDZ8R2J1');
+    </script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1>Grocery List</h1>
+                <div class="inputItems">
+                    <input type="text" id="itemText" autocomplete="off" placeholder="Enter the item here">
+                    <button class="submit"><i class="fas fa-plus" style="color:#FFF"></i> Add</button>
+                </div>
+            </div>
+            <ul class="grocery_list"></ul>
+            <div class="clear">
+                <button class="clearItem">Clear Items</button>
+            </div>
+        </div>
+    </main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/script.js"></script>
+</body>
+</html>
